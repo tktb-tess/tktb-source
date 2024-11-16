@@ -1,5 +1,6 @@
+<style>* { font-family: Inter, Arial, 'Helvetica Neue', 'Noto Sans JP', sans-serif!important; }</style>
+
 # tktb-source
 
-様々なメディア置き場です。
-
+ホームページ用のメディア置き場です。
 
