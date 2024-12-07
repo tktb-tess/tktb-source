@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <title>tktb-source</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --my-purple: #a200ff;
+        *, ::before, ::after {
+            box-sizing: border-box;
         }
 
         body {
-            background: linear-gradient(to left bottom, var(--my-purple), 5%, black);
+            background: linear-gradient(to left bottom, #3b005e, black);
             background-attachment: fixed;
             color: white;
             font-family: 'Playfair Display', 'Noto Serif JP', serif;
@@ -21,36 +22,37 @@
             padding: 0;
         }
 
-        h1, h2, h3, h4, h5, h6, p {
+        p {
             font-weight: 400;
             text-align: center;
+        }
 
-            &.article {
-                margin-top: 3rem;
-                margin-left: auto;
-                margin-right: auto;
-                padding: 0.5rem 0;
-                width: 40%;
-                min-width: 14rem;
-                box-shadow: 0 0 10px 2px white;
-                border-radius: 10px;
-                font-weight: 500;
-            }
+        h1 {
+            margin: 3rem auto;
+            padding: 0.5rem 1.5rem;
+            width: max-content;
+            max-width: 100%;
+            text-wrap: balance;
+            box-shadow: 0 0 10px 2px white;
+            border-radius: 10px;
+            font-weight: 500;
+            line-height: 1.5;
         }
 
         .container {
-            width: 85%;
+            width: 100%;
             margin: 0 auto;
-            padding-top: 1px;
+            padding: 1px 0.5rem;
             min-height: 100vh;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1 class="article">tktb-source</h1>
+        <h1>tktb-source</h1>
         <p>斗琴庭暁響のメディアを置く用リポジトリ。それ以外ここには何もないよ。</p>
     </div>
 </body>
-</html>
 
+</html>
