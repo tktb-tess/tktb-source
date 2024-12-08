@@ -4,9 +4,6 @@
 <head>
     <title>tktb-source</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <style>
         *, ::before, ::after {
             box-sizing: border-box;
@@ -16,7 +13,7 @@
             background: linear-gradient(to left bottom, #3b005e, black);
             background-attachment: fixed;
             color: white;
-            font-family: 'Playfair Display', 'Noto Serif JP', serif;
+            font-family: 'Charis SIL', 'Times New Roman', 'Noto Serif JP', serif;
             font-optical-sizing: auto;
             margin: 0;
             padding: 0;
@@ -27,31 +24,39 @@
             text-align: center;
         }
 
-        h1 {
+        h1#title {
             margin: 3rem auto;
             padding: 0.5rem 1.5rem;
             width: max-content;
             max-width: 100%;
             text-wrap: balance;
             box-shadow: 0 0 10px 2px white;
+            font-size: calc(1.375rem + 1.0vw);
             border-radius: 10px;
-            font-weight: 500;
+            font-weight: 400;
             line-height: 1.5;
         }
 
         #_container {
+            display: flow-root;
             width: 100%;
             margin: 0 auto;
-            padding: 1px 0.5rem;
+            padding: 0 0.5rem;
             min-height: 100vh;
+        }
+
+        .hidden {
+            display: none;
+            visibility: hidden;
         }
     </style>
 </head>
 
 <body>
     <div id="_container">
-        <h1>tktb-source</h1>
+        <h1 id="title">tktb-source</h1>
         <p>斗琴庭暁響のメディアを置く用リポジトリ。それ以外ここには何もないよ。</p>
+        <a href="#" class="hidden">本当に何も。</a>
     </div>
 </body>
 
